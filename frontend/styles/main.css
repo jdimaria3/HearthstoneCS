@@ -1,0 +1,394 @@
+body{
+
+	background-color: #fff8dc;
+	padding-top:0;
+	margin-top:0;
+}
+
+.titleContainer{
+	margin-top: 0;
+	padding:0;
+}
+
+.titleImg{
+	position: absolute;
+	z-index: -1;
+}
+
+#main
+{
+	display: flex;
+	width: 100%;
+}
+
+
+@font-face {
+        font-family: hs;
+        src: url(fonts/hs-font.otf);
+}
+
+#images
+{
+    height:100%
+}
+
+
+.title{
+        font-family: hs;
+	padding-top:200px;
+	padding-left:400px;
+	margin:0;
+        font-size: 70px;
+}
+
+.headings{
+	font-family: hs;
+        font-size: 20px;
+
+}
+
+.radioGroup1{
+	font-family: hs;
+	width: 200px;
+	font-size:15px
+}
+.radioGroup2{
+	font-family: hs;
+	width: 400px;
+	font-size:15px
+}
+
+.radioGroup3{
+	font-family: hs;
+        width: 300px;
+        font-size:15px
+  }
+
+.label
+{
+	font-family: hs;
+	font-size: 17px;
+	width:20px;
+	display: inline-block;
+}
+.rangeLabelCost
+{
+	color: darkblue;
+	font-family: hs;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 125px;
+	padding-right: 200px;
+	display:inline-block;
+}
+
+.rangeLabelAttack
+{
+	color: #ffd633;
+        font-family: hs;
+        font-size: 20px;
+        font-weight: bold;
+	padding-right: 200px;
+	display:inline-block;
+}
+
+.rangeLabelHealth
+{
+	color: red;
+        font-family: hs;
+        font-size: 20px;
+       font-weight: bold;
+	display:inline-block;
+}
+
+.slider
+{
+    height: 20px;
+    width: 230px;
+
+}
+
+
+
+
+
+.container {
+	display: flex;
+	align-items: top;
+        height: 200
+
+}
+.slidercontainer {
+	font-family: hs;
+	display: flex;
+
+}
+
+
+.buttonDiv{
+	display:inline-block;
+	padding-right:110px;
+}
+.button {
+	font-family: hs;
+        font-size: 25px;
+	width: 120px;
+        height:50px;
+	text-align: center;
+}
+
+
+.textDiv{
+	display: inline-block;
+	padding-right: 30px;
+    	height: 10px;
+}
+
+
+.textBox {
+	font-family: hs;
+	font-size: 17px;
+        width: 200px;
+        height: 50px;
+        text-align:center;
+}
+
+
+
+
+.card
+{
+	font-family: hs;
+	width: 260;
+	height:350;
+	font-size: 20px;
+	text-align: left;
+	style="display: block;"
+}
+
+
+// Cool button textures from:
+//https://nicegoodies.wordpress.com/2016/08/23/hearthstone-style-buttons-css-html/
+// Code used from above link
+
+-wrapper {
+    font-family: hs;
+    cursor: pointer;
+    width: 200px;
+    padding: 0 2px;
+    border-right: none;
+    border-left: none;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+}
+
+.hs-button {
+    font-family: hs;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    border: solid 3px #795548;
+}
+
+.hs-text {
+    font-family: hs;
+    display: table-cell; width: 100%;
+    vertical-align: middle;
+    padding: 9px 24px;
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 0 4px #000, 0 0 8px #000;
+    font-size: 20px;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.hs-border{
+    font-family: hs;
+    display: table;
+    padding: 3px;
+    border-radius: 2px;
+    height: 35px;
+    min-height: 35px;
+    width: 100%;
+    /* Font style */
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* HearthStone Classic Violet Button
+ * –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hs-wrapper.classic {
+    background-color: #c1b3b0;
+    background: linear-gradient(to bottom,
+        #c1b3b0,
+        #c1b3b0 9%,
+        #4a3424 93%,
+        #1c140d);
+    border-top: 2px solid #AD9A90;
+    border-bottom: 2px solid #1c140d;
+}
+.hs-button.classic {
+    background: linear-gradient(to bottom,
+        #6f5742,
+        #81615d);
+}
+
+.hs-text.classic {
+    background: radial-gradient(circle,
+        #bc22c7 25%,
+        #7c1693 75%,
+        #5c1096);
+}
+
+.hs-border.classic {
+    background-color: #BC22C7;
+    box-shadow: 0px 2px 6px 0px #331e0b;
+    background: linear-gradient(to bottom,
+        #f756fe,
+        #c84bd6 5%,
+        #7305ae 59%,
+        #661f91);  
+}
+
+.hs-border:hover .hs-text.classic {
+    background: radial-gradient(circle,
+        #e235ee 22%,
+        #981cb4);
+}
+* HearthStone Green Button
+* –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hs-wrapper.green {
+    background-color: #d8be52;
+    background: linear-gradient(to bottom,
+        #d8be52, #a77d33 9%,
+        #5f3f1d 93%,
+        #1c140d);
+    border-top: 2px solid #d8be52;
+    border-bottom: 2px solid #1c140d; 
+}
+
+.hs-button.green {
+    background: linear-gradient(to bottom,
+        #6f5742,
+        #81615d);
+}
+
+.hs-text.green {
+    background: radial-gradient(circle,
+        #05c4b2 25%,
+        #009688 75%,
+        #015f57);
+}
+
+.hs-border.green {
+    background-color: #009688;
+    box-shadow: 0px 2px 6px 0px #014640;
+    background: linear-gradient(to bottom,
+        #18e9d5,
+        #13bcab 5%,
+        #015f57 59%,
+        #014640);
+}
+
+.hs-border:hover .hs-text.green {
+	background: radial-gradient(circle,
+        #18e9d5 22%,
+        #05a193 83%,
+        #028277);
+}
+
+
+/* HearthStone Silver Button
+ * –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hs-wrapper.silver {
+    background-color: #d8be52;
+    background: linear-gradient(to bottom,
+        #d8be52,
+        #a77d33 9%,
+        #5f3f1d 93%,
+        #1c140d);
+    border-top: 2px solid #d8be52;
+    border-bottom: 2px solid #1c140d;
+}
+
+.hs-button.silver {
+    background: linear-gradient(to bottom,
+        #6f5742,
+        #81615d);
+}
+
+.hs-text.silver {
+    background: radial-gradient(circle,
+        #b6c2dd 25%,
+        #838da5 75%,
+        #43506e);
+}
+
+.hs-border.silver {
+    background-color: #a1b9e8;
+    box-shadow: 0px 2px 6px 0px #3a4663;
+    background: linear-gradient(to bottom,
+        #bfcce6,
+        #a1b9e8 5%,
+        #43506e 59%,
+        #3a4663);
+}
+
+.hs-border:hover .hs-text.silver {
+    background: radial-gradient(circle,
+        #cfdbf5 22%,
+        #a3afcc 83%,
+        #697da9);
+}
+
+
+/* HearthStone Gold Button
+ * –––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hs-wrapper.gold {
+    background-color: #d8be52;
+    background: linear-gradient(to bottom,
+        #d8be52,
+        #a77d33 9%,
+        #5f3f1d 93%,
+        #1c140d);
+    border-top: 2px solid #d8be52;
+    border-bottom: 2px solid #1c140d;
+}
+
+.hs-button.gold {
+    background: linear-gradient(to bottom,
+        #6f5742,
+        #81615d);
+}
+
+.hs-text.gold {
+    background: radial-gradient(circle,
+        #edca37 25%,
+        #a77d33 75%,
+        #5f3f1d);
+}
+
+.hs-border.gold {
+    background-color: #a77d33;
+    box-shadow: 0px 2px 6px 0px #362c26;
+    background: linear-gradient(to bottom,
+        #d8be52,
+        #d5b631 5%,
+        #5f3f1d 59%,
+        #362c26);
+}
+
+.hs-border:hover .hs-text.gold{
+    background: radial-gradient(circle,
+        #fed83b 22%,
+        #dba23e 83%,
+        #9d6224);
+}
