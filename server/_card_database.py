@@ -17,7 +17,8 @@ class _card_database:
         cards= json.load(json_data)
         for card in cards:
             if "dbfId" in card and "rarity" in card:
-                imgLink=self.get_img_link(card["dbfId"], "./images.json")
+                imgLink= "https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/rel/"+ str(card["dbfId"])+".png"
+                self.get_img_link(card["dbfId"], "./images.json")
                 # If spell then no health and attack attributes
                 if card["type"]=="SPELL":
                     self.cards[int(card["dbfId"])]= [card["type"],card["name"],
@@ -31,6 +32,9 @@ class _card_database:
                                imgLink]                   
         json_data.close()
 
+    '''
+    No longer necesary, every card can be found here:
+    https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/rel/
     # Function that gets img link of given card ID if it exist in given file
     def get_img_link(self,dbfId,img_file):
         json_data=open(img_file)
@@ -41,6 +45,8 @@ class _card_database:
                 return (link["url"])
         json_data.close()
         return(" ")
+    '''
+
 
     def get_cards(self):
         IDList=list()
