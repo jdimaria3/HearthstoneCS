@@ -148,8 +148,8 @@ def start_service():
     # Configuration for the server
     conf = {
 	    'global' : {
-	        'server.socket_host': 'student04.cse.nd.edu',
-                'server.socket_port': 51051,},
+	        'server.socket_host': '127.0.0.1',
+                'server.socket_port': 8080,},
                 '/' : {'request.dispatch': dispatcher,
                 'tools.CORS.on': True}
 	   }
