@@ -18,7 +18,6 @@ class _card_database:
         for card in cards:
             if "dbfId" in card and "rarity" in card:
                 imgLink= "https://raw.githubusercontent.com/schmich/hearthstone-card-images/master/rel/"+ str(card["dbfId"])+".png"
-                self.get_img_link(card["dbfId"], "./images.json")
                 # If spell then no health and attack attributes
                 if card["type"]=="SPELL":
                     self.cards[int(card["dbfId"])]= [card["type"],card["name"],
