@@ -64,7 +64,7 @@ var card8;
 var card9;
 var card10;
 var cardList;
-var baseURL= "http://student04.cse.nd.edu:51051/"
+var baseURL= "http://127.0.0.1:8080/"
 var defaultURL="http://media-hearth.cursecdn.com/attachments/2/105/cardback-promotional.png"
 var pageNum=1;
 
