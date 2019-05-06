@@ -1,0 +1,172 @@
+<doctype html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <title> Hearthstone Searcher</title>
+        <link href="styles/main.css" rel="stylesheet">
+        <script src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/json2.js"></script>
+    </head>
+
+    <body style="min-width:1350px; background-size:cover; background-position:center;" background="images/background.jpg">
+	<div class="Titlecontainer">
+		<img class="titleImg" height="300" width="600" style="padding-left:350px;" src="http://geeksandgeeklets.com/wp-content/uploads/2015/10/boRiaOv.png">
+		<h3 class="title"> Card Searcher</h3>
+	</div>
+	</br>
+	</br>
+	</br>
+	<div id="main" class="container">
+            <div>
+		<h3 class= "headings" style="color: green">Type</h3>              
+                <form class="radioGroup1">
+                  <input type="radio" name="Type" id="Allt" checked> All<br>
+                  <input type="radio" name="Type" id="Minions"> Minions<br>
+                  <input type="radio" name="Type" id="Spells"> Spells
+                </form>
+            </div>
+            <div>
+		<h3 class="headings" style="color: darkcyan">Class</h3>
+                <form class="radioGroup2">
+                  <input type="radio" name="Class" id="Druid" checked>Druid
+                  <input type="radio" name="Class" id="Hunter"> Hunter
+                  <input type="radio" name="Class" id="Mage"> Mage <br>
+                  <input type="radio" name="Class" id="Paladin"> Paladin
+                  <input type="radio" name="Class" id="Priest"> Priest
+                  <input type="radio" name="Class" id="Rogue"> Rogue<br>
+                  <input type="radio" name="Class" id="Shaman"> Shaman
+                  <input type="radio" name="Class" id="Warlock"> Warlock
+                  <input type="radio" name="Class" id="Warrior"> Warrior<br>
+                  <input type="radio" name="Class" id="Allc"> All<br>
+                </form>
+
+            </div>
+            <div>
+		<h3 class="headings" style="color:purple;">Rarity</h3>
+                <form class="radioGroup3">
+                   <input type="radio" name="Rarity" id="Free" checked>Free
+                   <input type="radio" name="Rarity" id="Common"> Common<br>
+                   <input type="radio" name="Rarity" id="Rare"> Rare 
+                   <input type="radio" name="Rarity" id="Epic"> Epic <br>
+                   <input type="radio" name="Rarity" id="Legendary"> Legendary
+                   <input type="radio" name="Rarity" id="Allr"> All
+                </form>
+             </div>
+
+            <div>
+		<div style="width:150px; display:inline-block;"class="hs-wrapper green">
+                      <button id="filterButton" class='hs-button green' href="">
+                        <span class='hs-border green'>
+                        <span class='hs-text green'>
+                          filter
+                        </span>
+                        </span>
+                       </button>
+                </div>
+		<div style="display:inline-block; padding-right:100px">
+                </div>
+
+		<div style="width:150px; display:inline-block;"class="hs-wrapper silver">
+                      <button id="resetButton" class='hs-button silver' href="">
+                        <span class='hs-border silver'>
+                        <span class='hs-text silver'>
+                          reset
+                        </span>
+                        </span>
+                       </button>
+                </div>
+
+                </br>
+                </br>
+		</br>
+		</br>
+		</br>
+		</br>
+
+                <div>
+		    <div class="textDiv">
+                       <input type="text" style="background-color:rgba(1, 2,2, .1);"id="nameBox"class="textBox" placeholder="Name to Search"></input>
+                    </div>
+		    <div style="width:170px; display:inline-block"class="hs-wrapper classic">
+		      <button id="searchButton" class='hs-button classic' href="">
+			<span class='hs-border classic'>
+			<span class='hs-text classic'>
+			  Search
+			</span>
+			</span>
+		       </button>
+		    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slidecontainer">
+            <div class=rangeLabelCost>
+                <label>Cost</label>
+            </div>
+	    <div class=rangeLabelAttack>
+                <label>Attack</label>
+            </div>
+            <div class=rangeLabelHealth>
+                <label >Health</label>
+            </div>    
+		
+	    <br>
+            <label class = "label" id="lowCostText">0</label>
+            <input type="range" min="0" max="30" step=1 value="0" class="slider" id="lowCostRange">
+            <label class= "label" id="lowAttackText">0</label>
+            <input type="range" min="0" max="25" step=1 value="0" class="slider" id="lowAttackRange">
+            <label class="label" id="lowHealthText">0</label>
+	    <input type="range" min="0" max="25" step=1 value="0" class="slider" id="lowHealthRange">
+            <label class="label">LOW</label><br>
+
+            <label class="label" id="highCostText">30</label>
+            <input type="range" min="0" max="30" step=1 value="30" class="slider" id="highCostRange">
+            <label class="label" id="highAttackText">25</label>
+            <input type="range" min="0" max="25" step=1 value="25" class="slider" id="highAttackRange">
+            <label class="label" id="highHealthText">25</label>
+            <input type="range" min="0" max="25" step=1 value="25" class="slider" id="highHealthRange">
+            <label class="label">HIGH</label>
+
+
+        </div>
+        </br>
+        <div class=buttonRow>
+	    <div style="width:145px; display:inline-block;"class="hs-wrapper gold">
+                      <button id="prevButton" class='hs-button gold' href="">
+                        <span class='hs-border gold'>
+                        <span class='hs-text gold'>
+                          Prev
+                        </span>
+                        </span>
+                       </button>
+            </div>
+	    <div style="display:inline-block; padding-right:1010px">
+	    </div>
+	    <div style="width:145px; display:inline-block;"class="hs-wrapper gold">
+                      <button id="nextButton" class='hs-button gold' href="">
+                        <span class='hs-border gold'>
+                        <span class='hs-text gold'>
+                          Next
+                        </span>
+                        </span>
+                       </button>
+            </div>
+
+        </div>
+        </br>
+        <div>
+            <img id=card1 class="card"  src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card2 class="card" src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card3 class="card" src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card4 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card5 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <br>
+            <img id=card6 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card7 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card8 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card9 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+            <img id=card10 class=card src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
+        </div>
+    </body>
+
+</html>
