@@ -3,12 +3,23 @@
     <head>
     	<meta charset="utf-8">
         <title> Hearthstone Searcher</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
         <link href="styles/main.css" rel="stylesheet">
         <script src="scripts/main.js"></script>
         <script type="text/javascript" src="scripts/json2.js"></script>
     </head>
 
-    <body style=" width: auto; max-width:100%;  background-size:cover; background-position:center; height: auto" background="images/background.jpg">
+    <body class="cont" style=" width: auto; max-width:100%;  background-size:cover; background-position:center; height: auto" background="images/background.jpg">
+      
+       <ul>
+        <li><a href="about.html">About The Project</a></li>
+        <li><a href="contribute.html">Contibute To The Project</a></li>
+        <li><a href="license.html">Licensing</a></li>
+      </ul> 
+
       <div class="Titlecontainer">
     	  <img class="titleImg" height="300" width="600" style="padding-left:350px;" src="http://geeksandgeeklets.com/wp-content/uploads/2015/10/boRiaOv.png">
     	  <h3 class="title"> Card Searcher</h3>
@@ -56,8 +67,8 @@
         </div>
 
         <div>
-    	    <div style="width:150px; display:inline-block;"class="hs-wrapper green">
-            <button id="filterButton" class='hs-button green' href="">
+    	    <div style="width:100px; display:inline-block;"class="hs-wrapper green">
+            <button  style="width:100px;" id="filterButton" class='hs-button green' href="">
               <span class='hs-border green'>
                 <span class='hs-text green'>
                   Filter
@@ -68,9 +79,9 @@
 
     	    <div style="display:inline-block; padding-right:100px"> </div>
 
-    	    <div style="width:150px; display:inline-block;"class="hs-wrapper silver">
-            <button id="resetButton" class='hs-button silver' href="">
-              <span class='hs-border silver'>
+    	    <div  class="hs-wrapper silver" style="width:120px; display:inline-block;">
+            <button id="resetButton" class='hs-button silver' style="width:120px;"  href="">
+              <span class='hs-border silver' >
                 <span class='hs-text silver'>
                   Reset
                 </span>
@@ -89,8 +100,8 @@
     	      <div class="textDiv">
               <input type="text" style="background-color:rgba(1, 2,2, .1);"id="nameBox"class="textBox" placeholder="Name to Search"></input>
             </div>
-    	      <div style="width:170px; display:inline-block"class="hs-wrapper classic">
-    	        <button id="searchButton" class='hs-button classic' href="">
+    	      <div style="width:150px; display:inline-block"class="hs-wrapper classic">
+    	        <button id="searchButton" class='hs-button classic' style="width:150px;" href="">
     		       <span class='hs-border classic'>
     		         <span class='hs-text classic'>
     		           Search
@@ -135,9 +146,9 @@
 
       </div>
       
-      <div class=buttonRow>
+      <div class="buttonrowcontainer" style="max-width: 90%; width: auto;">
   	    <div style="width:145px; display:inline-block;"class="hs-wrapper gold">
-            <button id="prevButton" class='hs-button gold' href="">
+            <button style="width:145px;" id="prevButton" class='hs-button gold' href="">
               <span class='hs-border gold'>
                 <span class='hs-text gold'>
                   Prev
@@ -147,7 +158,7 @@
         </div>
         <div style="display:inline-block; padding-right:1010px"> </div>
   	    <div style="width:145px; display:inline-block;"class="hs-wrapper gold">
-          <button id="nextButton" class='hs-button gold' href="">
+          <button id="nextButton" class='hs-button gold' style="width:145px;" href="">
             <span class='hs-border gold'>
               <span class='hs-text gold'>
                 Next
@@ -172,13 +183,6 @@
         <img id=card10 class="card" src="http://media-hearth.cursecdn.com/attachments/0/612/blizzcon-mystery-minion-template.png">
       </div>
         <br>
-        <div>
-          <a href="about.html">About The Project</a>
-          <div style="display:inline-block; padding-right:50px"></div>
-          <a href="contribute.html">Contibute To The Project</a>
-          <div style="display:inline-block; padding-right:50px"></div>
-          <a href="license.html">Our License</a>
-        </div>
       </div> 
     </body>
   </html>
