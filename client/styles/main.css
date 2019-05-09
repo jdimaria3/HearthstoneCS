@@ -30,11 +30,34 @@ body{
     src: url(fonts/hs-font.otf);
 }
 
+#left {
+  float: right;
+  width: 48%;
+}
+#right {
+  float: left;
+  width: 48%;
+}
+#gap {
+    float: right;
+    width: 4%;
+}
+
+#parent {
+  display: flex;
+}
+#half {
+  width: 50%;
+}
+
 #images
 {
     height:100%
 }
 
+.half{
+    display: inline-block;
+}
 
 .center{
     display: block;
