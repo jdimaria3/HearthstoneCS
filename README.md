@@ -16,6 +16,9 @@ Click the website link to find our tool hosted on a digital ocean server: http:/
 For steps on how to install the tool, description of the codebase, and ways to contribute to the project visit. http://68.183.113.214:8081/contribute.html
 
 
+**Contact**
+If you have any questions or suggestions feel free to reach out to Joey (jdimaria@nd.edu) or Manuel (mmarroqu@nd.edu)
+
 **Misc**
 
 Current dependencies 
