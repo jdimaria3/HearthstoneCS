@@ -158,7 +158,10 @@ li a:hover {
     display: flex;
     justify-content: space-between;
 }
-
+.buttonrowcontainer{
+    display: flex;
+    justify-content: space-between;
+}
 .buttonDiv{
 	display:inline-block;
 	padding-right:110px;
@@ -193,8 +196,8 @@ li a:hover {
 .card
 {
 	font-family: hs;
-	width: 260;
-	height:350;
+	width: 300;
+	height:400;
 	font-size: 20px;
 	text-align: left;
     position: relative;
