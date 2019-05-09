@@ -2,7 +2,7 @@ import flask
 from flask_restful import Api, Resource
 from flask_cors import CORS
 
-from _card_database import _card_database
+from card_database import _card_database
 from controller import *
 
 cdb=_card_database()
