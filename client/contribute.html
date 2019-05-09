@@ -22,10 +22,90 @@
     <h3 class="title" style="text-align:center;">Card Searcher</h3>
   </div>
 
-  <h1 style="font-size:40px;">Want to contribute to the project?</h1>
+  <h1 style="font-size:50px; text-align:center;">Want to contribute to the project? Learn how here!</h1>
 
-  <p>Learn how here!</p>
+  <div id="parent">
+    <div id="left">
+      <h1 style="font-size:30px; text-align:center;">GitHub and Installation</h1>
+      <p style="text-align:justify;">To get started, we recommend checking out our GitHub page for this project, which can be found at the link <a href="https://github.com/jdimaria3/HearthstoneCS">here</a>. Once you've familiarized yourself with the code, feel free to fork it and start editing.
+        <br>
+        <br>
+      Before you get started, though, you should be aware that this project has a few dependencies that you'll need to install in order to ensure you're able to successfully run and test the code.
+        <ol>
+          <li>Python and Pip3 (for installations)</li>
+          <br>
+          <li>Flask</li>
+          <br>
+          <li>Flask_Restful</li>
+          <br>
+          <li>Flask_CORS</li>
+          <br>
+        </ol>
+      Once you have installed Python 3 and Pip3, you can simply install the Flask dependencies by running “pip3 install [dependency]".
+      </p>
+    </div>
+    <div id="gap"></div>
+    <div id="right">
+      <h1 style="font-size:30px; text-align:center;">How To Run The Project</h1>
+      <p style="text-align:justify;">
+      After installing all of the needed dependencies, change into the “server” directory and run the server by typing “python3 ./server.py”. You may see something like this:
+      <pre>
+        Serving Flask app "server" (lazy loading)
+        Environment: production
+        Debug mode: on
+        Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+        Restarting with stat
+        Debugger is active!
+        Debugger PIN: 192-688-002
+      </pre>
+      This server will run on <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a> and is needed for the frontend client to access the card database.
+      <br> <br>
+      Finally, change directories into the “client” Directory. Once here run the start script by typing “./start.sh”
+      <br> <br>
+      You can now access the client on <a href="http://localhost:8081">http://localhost:8081</a>
+      </p>
+    </div>
+  </div>
   
+  <div id="parent">
+    <div id="left">
+      <h1 style="font-size:30px; text-align:center;">Repository Structure</h1>
+      <p style="text-align:justify;">
+        <u><b>Backend Server:</b></u>
+        <br> <br>
+        The backend server directory houses the Restful API that the Frontend Web Client communicates with. The API server is a Restful Flask server written in Python. It makes use of a Card Database class. The server uses “controller.py” as a middleman to communicate with the card database by calling any needed functions to retrieve cards. The Card Database populates itself from a JSON file with data acquired from <a href="https://api.hearthstonejson.com/v1/30103/enUS/">here</a>.
+        <br> <br>
+        <u><b>Frontend Client:</b></u>
+        <br> <br>
+        The frontend client directory houses all the code required to run the Web Client that communicates with the Restful API. The functions that control all of the behavior of the main page can be found in the scripts subdirectory in “main.js”. Each of the html files in the directory correspond to a unique page on the client site. “Index.html” hosts the main card searcher tool.
+      </p>
+    </div>
+    <div id="gap"></div>
+    <div id="right">
+      <h1 style="font-size:30px; text-align:center;">Ways to Contribute</h1>
+      <p style="text-align:justify;">
+        This tool is still in progress! There are a bunch of ways to contribute, and here are just a couple:
+        <ol>
+          <li>Creating updated Test Scripts for the Backend API</li> <br>
+          <li>Styling frontend to be more compatible with varying screen resolutions and different browsers</li> <br>
+          <li>Write documentation for the backend API</li> <br>
+          <li>Add new forms of searching from the base tool</li> <br>
+          <ol>
+            <li>By attributes (Battlecry, Charge, Taunt, etc)</li> <br>
+            <li>By minion type (Dragon, Murloc, Beast, Mech, etc)</li> <br>
+            <li>By expansion</li> <br>
+            <li>By Standard vs Wild</li> <br>
+          </ol>
+        </ol>    
+        If you have any recommendations for new features feel free to share and implement them! 
+        <br> <br>
+        <b>Please note: When implementing these, make sure to create a pull request to merge it with the master directory.</b>
+        <br> <br>
+        Visit our github page for ways of contacting us if you have any questions or concerns!
+      </p>
+    </div>
+  </div>
+
   </body>
 
 </html>
