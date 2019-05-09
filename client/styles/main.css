@@ -123,7 +123,10 @@ body{
 	display: flex;
 
 }
-
+.cardscontainer{
+    display: flex;
+    justify-content: space-between;
+}
 
 .buttonDiv{
 	display:inline-block;
@@ -163,6 +166,7 @@ body{
 	height:350;
 	font-size: 20px;
 	text-align: left;
+    position: relative;
 	style="display: block;"
 }
 

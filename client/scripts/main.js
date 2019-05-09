@@ -594,7 +594,7 @@ function getRarity() {
 	if (document.getElementById("Legendary").checked == true) {
 		rarityButton = "LEGENDARY"
 	}
-	if (document.getElementById("Allr").checked == true) {
+	if (document.getElementById("All").checked == true) {
 		rarityButton = "ALL"
 	}
 }
