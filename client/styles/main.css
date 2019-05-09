@@ -11,7 +11,11 @@ body{
 }
 
 .titleImg{
-	position: absolute;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: absolute;
 	z-index: -1;
 }
 
@@ -23,8 +27,8 @@ body{
 
 
 @font-face {
-        font-family: hs;
-        src: url(fonts/hs-font.otf);
+    font-family: hs;
+    src: url(fonts/hs-font.otf);
 }
 
 #images
@@ -33,18 +37,23 @@ body{
 }
 
 
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .title{
-        font-family: hs;
-	padding-top:200px;
-	padding-left:400px;
+    font-family: hs;
+	padding-top:210px;
 	margin:0;
-        font-size: 70px;
+    font-size: 70px;
 }
 
 .headings{
 	font-family: hs;
-        font-size: 20px;
-
+    font-size: 20px;
 }
 
 .radioGroup1{
@@ -60,8 +69,8 @@ body{
 
 .radioGroup3{
 	font-family: hs;
-        width: 300px;
-        font-size:15px
+    width: 300px;
+    font-size:15px
   }
 
 .label
